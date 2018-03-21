@@ -23,7 +23,12 @@ npm install or npm i
   npm install -g editorconfig-tools
 
 Ejecutar
+
+all file
   editorconfig-tools fix **/*
+
+file the project
+  editorconfig-tools fix src/**/*
 ```
 
 ## Ejecución
