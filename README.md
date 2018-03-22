@@ -13,14 +13,18 @@ git clone https://github.com/sheeddy/react-boilerplate-2018.git
 
 cd react-boilerplate-2018
 
-npm install or npm i
+yarn
+
+& rum project
+
+yarn start
 ```
 
 ## Otras instalaciones
 
 ```
 *Editor config
-  npm install -g editorconfig-tools
+  yarn add -g editorconfig-tools
 
 Ejecutar
 
@@ -35,10 +39,10 @@ file the project
 
 ### API local
 ```
-npm run start
+yarn start or npm start
 ```
 
 ### API Produccion
 ```
-npm run build
+yarn build or npm build
 ```
