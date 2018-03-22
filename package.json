@@ -1,34 +1,16 @@
 {
-  "name": "react-borleiplate-2018",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "start": "webpack-dev-server --mode development",
-    "build": "webpack --mode production"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/sheeddy/react-boilerplate-2018.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/sheeddy/react-boilerplate-2018/issues"
-  },
-  "homepage": "https://github.com/sheeddy/react-boilerplate-2018#readme",
-  "devDependencies": {
-    "babel-core": "^6.26.0",
-    "babel-loader": "^7.1.4",
-    "babel-preset-env": "^1.6.1",
-    "babel-preset-react": "^6.24.1",
-    "html-loader": "^0.5.5",
-    "html-webpack-plugin": "^3.0.7",
+  "name": "a",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
-    "webpack": "^4.1.1",
-    "webpack-cli": "^2.0.12",
-    "webpack-dev-server": "^3.1.1"
+    "react-scripts": "1.1.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
   }
 }
