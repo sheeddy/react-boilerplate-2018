@@ -1,3 +1,4 @@
+const path = require("path");
 const HtmlWebPackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
@@ -47,5 +48,10 @@ module.exports = {
       filename: "[name].css",
       chunkFilename: "[id].css"
     })
-  ]
+  ],
+  devServer: {
+    inline: false,
+    historyApiFallback: true,
+    overlay: true
+  }
 };

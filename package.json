@@ -57,8 +57,9 @@
     "whatwg-fetch": "2.0.3"
   },
   "scripts": {
-    "start": "webpack-dev-server --mode development --open",
-    "build": "webpack --mode production",
+    "start":
+      "webpack-dev-server --mode development ./src/index.js --output ./dist/main.js",
+    "build": "webpack --mode production ./src/index.js --output ./dist/main.js",
     "precommit": "pretty-quick --staged"
   },
   "devDependencies": {
