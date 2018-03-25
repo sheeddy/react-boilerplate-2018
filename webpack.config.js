@@ -51,7 +51,6 @@ module.exports = {
   ],
   devServer: {
     inline: false,
-    historyApiFallback: true,
-    overlay: true
+    historyApiFallback: true
   }
 };
