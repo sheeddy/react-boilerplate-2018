@@ -1,17 +1,13 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
+import { Styled } from "./styledComponent";
+
 export default class Home extends Component {
   render() {
     return (
       <div>
-        <ul>
-          <li>
-            <Link to="/">Home</Link>
-          </li>
-          <li>
-            <Link to="/app">App</Link>
-          </li>
-        </ul>
+        <div>
+          <p className={Styled.home}>Home</p>
+        </div>
       </div>
     );
   }

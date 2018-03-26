@@ -3,6 +3,7 @@ import ReactDOM from "react-dom";
 import { Provider } from "react-redux";
 import { createStore, applyMiddleware } from "redux";
 import { BrowserRouter as Router } from "react-router-dom";
+import MuiThemeProvider from "material-ui/styles/MuiThemeProvider";
 
 import RootReducer from "./reducers";
 import RootRouter from "./routes";
@@ -13,7 +14,9 @@ const store = createStoreWithMiddleware(RootReducer);
 ReactDOM.render(
   <Provider store={store}>
     <Router>
-      <RootRouter />
+      <MuiThemeProvider>
+        <RootRouter />
+      </MuiThemeProvider>
     </Router>
   </Provider>,
   document.getElementById("root")
