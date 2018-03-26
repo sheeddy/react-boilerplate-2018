@@ -4,6 +4,7 @@ import { Provider } from "react-redux";
 import { createStore, applyMiddleware } from "redux";
 import { BrowserRouter as Router } from "react-router-dom";
 import MuiThemeProvider from "material-ui/styles/MuiThemeProvider";
+import "./style/index.scss";
 
 import RootReducer from "./reducers";
 import RootRouter from "./routes";

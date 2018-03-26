@@ -28,6 +28,8 @@
     "dotenv": "5.0.1",
     "dotenv-expand": "4.2.0",
     "eslint": "4.19.1",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-config-airbnb-base": "^12.1.0",
     "eslint-config-react-app": "^2.1.0",
     "eslint-loader": "2.0.0",
     "eslint-plugin-flowtype": "2.46.1",
@@ -81,6 +83,7 @@
     "react-redux": "^5.0.7",
     "react-router-dom": "^4.2.2",
     "sass-loader": "^6.0.7",
+    "to-string-loader": "^1.1.5",
     "webpack-cli": "^2.0.12"
   },
   "jest": {
@@ -118,7 +121,6 @@
     "plugins": ["babel-plugin-styled-components"]
   },
   "eslintConfig": {
-    "parser": "babel-eslint",
     "extends": "react-app"
   }
 }

@@ -23,7 +23,14 @@ module.exports = {
       },
       {
         test: /\.css$/,
-        use: [MiniCssExtractPlugin.loader, "css-loader"]
+        use: [
+          MiniCssExtractPlugin.loader,
+          "css-loader",
+          "style-loader",
+          { loader: "css-loader", options: { importLoaders: 1 } },
+          "postcss-loader",
+          "to-string-loader"
+        ]
       },
       {
         test: /\.(png|svg|jpg|gif)$/,
@@ -35,14 +42,16 @@ module.exports = {
       },
       {
         test: /\.scss$/,
-        use: ["sass-loader"]
-      },
-      {
-        test: /\.css$/,
         use: [
-          "style-loader",
-          { loader: "css-loader", options: { importLoaders: 1 } },
-          "postcss-loader"
+          {
+            loader: "style-loader"
+          },
+          {
+            loader: "css-loader"
+          },
+          {
+            loader: "sass-loader"
+          }
         ]
       }
     ]
